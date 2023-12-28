@@ -11,19 +11,18 @@
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/product">Product</router-link>
+            <router-link class="nav-link" to="/galery">Galery</router-link>
           </li>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-form>
-            <b-form-input
-              size="sm"
-              class="mr-sm-2"
-              placeholder="Search"
-            ></b-form-input>
-          </b-nav-form>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/keranjang">
+                <b-icon-bag></b-icon-bag>
+                <span class="badge bg-primary rounded-circle">0</span>
+              </router-link>
+            </li>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

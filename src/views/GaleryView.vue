@@ -5,7 +5,7 @@
       <Hero />
       <div class="row">
         <div class="col-md-3 g-3" v-for="product in products" :key="product.id">
-          <CardProduct :product="product"
+          <GaleryProduct :product="product"
           />
         </div>
       </div>
@@ -17,7 +17,7 @@
 // @ is an alias to /src
 
 import Navbar from "@/components/NavbarVue.vue";
-import CardProduct from "@/components/CardProduct.vue";
+import GaleryProduct from "@/components/GaleryProduct.vue"
 import Hero from "@/components/HeroVue.vue";
 import axios from "axios";
 
@@ -25,7 +25,7 @@ export default {
   name: "HomeView",
   components: {
     Navbar,
-    CardProduct,
+    GaleryProduct,
     Hero,
   },
   data() {
